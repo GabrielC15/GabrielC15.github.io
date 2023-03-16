@@ -1,49 +1,123 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>{% block title %}My Site{% endblock %}</title>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/#">About</a></li>
-        <li><a href="/#"> Projects </a></li>
-        <li><a href="/#"> Education </a></li>
-        <li><a href="/#"> About </a></li>
-        <a href="https://github.com/GabrielC15.github.io/temp.pdf" target="_blank">Resume</a>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>Welcome to my site!</h1>
-    <p>This is the home page.</p>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Clarence Taylor</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        <span class="text-primary">Gabriel</span>
+                         Chong
+                    </h1>
+                        <a href="mailto:name@email.com">name@email.com</a>
+                    </div>
+                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
 
-    <h2>Projects</h2>
-    <p>To be added...</p>
-
-    <h2>Education</h2>
-    <ul>
-    <li>Completed 2022 Senior High School education at Sabah Tshung Tsin Secondary School, Sabah, Malaysia</li>
-    <li>Completed 2023 CS50x and CS50P courses from HarvardX, Harvard University</li>
-    <li>Completed 2022 ABRSM Performance Diploma in Violin</li>
-    </ul>
-
-    <h2>Skills</h2>
-    <ul>
-    <li>Proficient in programming languages including Java, Python, and C</li>
-    <li>Strong problem-solving skills and ability to work in a team</li>
-    <li>Excellent communication skills</li>
-    <li>Detail-oriented with the ability to manage multiple tasks simultaneously</li>
-    <li>Highly adaptable and flexible with the ability to learn new skills quickly</li>
-    <li>Experienced in performing with an orchestra and participating in multiple camps and performances</li>
-    </ul>
-
-  </main>
-  <footer>
-    &copy; My Site 2023
-  </footer>
-</body>
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Sabah Tshung Tsin Secondary School</h3>
+                            <div class="subheading mb-3">Science Stream</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2017 - 2022</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">HarvardX Courses</h3>
+                            <div class="subheading mb-3">CS50x, CS50P</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2023</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul>
+                        <li>C</li>
+                        <li>Python</li>
+                    </ul>
+                    <div class="subheading mb-3">Soft skills</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Strong problem-solving skills and ability to work in a team
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Excellent communication skills
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Detail-oriented with the ability to manage multiple tasks simultaneously
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Highly adaptable and flexible with the ability to learn new skills quickly
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from being a web developer, I enjoy most of my time being outdoors.</p>
+                    <p class="mb-0">Aside from that, I am an amateur classical violinist and pianist, as well as an avid classical music listener.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
