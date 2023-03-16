@@ -18,9 +18,6 @@ def education():
 def about():
     return render_template("about.html")
 
-@app.route("/resume")
-    return render_template("resume.html")
-
 if __name__ == '__main__':
     app.run(debug=True)
 app = Flask(__name__)
